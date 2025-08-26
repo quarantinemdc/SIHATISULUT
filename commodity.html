@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komoditas Sulawesi Utara</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <img src="images/karantinalogo.jpg" alt="Logo Karantina" class="logo">
+            <img src="images/torangbisalogo.jpg" alt="Logo Torang Bisa" class="logo">
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Beranda</a>
+            <a href="commodity.html">Komoditas Sulawesi Utara</a>
+            <a href="service.html">Kalkulator Layanan</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="header-komoditas">
+            <h1>10 KOMODITAS IKAN DOMINAN SULAWESI UTARA</h1>
+            <h2>"Berikut adalah daftar komoditas ikan dominan yang ada di Sulawesi Utara Tahun 2024-2025"</h2>
+        </div>
+
+        <div class="search-filter-bar">
+            <input type="text" id="search-input" placeholder="Cari komoditas...">
+            <select id="category-filter">
+                <option value="all">Semua Kategori</option>
+            </select>
+        </div>
+
+        <div class="commodity-grid">
+            <div class="commodity-card" data-komoditas="koi">
+                <img src="images/Koi.jpg" alt="Ikan Koi">
+                <div class="card-info">
+                    <h3>Ikan Koi</h3>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-komoditas="nila">
+                <img src="images/Nila.jpg" alt="Ikan Nila">
+                <div class="card-info">
+                    <h3>Ikan Nila</h3>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-komoditas="tuna">
+                <img src="images/tuna.jpg" alt="Tuna">
+                <div class="card-info">
+                    <h3>Tuna</h3>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-komoditas="cakalang">
+                <img src="images/Cakalang.jpg" alt="Cakalang">
+                <div class="card-info">
+                    <h3>Cakalang</h3>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-komoditas="layang">
+                <img src="images/Layang.jpg" alt="Layang">
+                <div class="card-info">
+                    <h3>Layang</h3>
+                </div>
+            </div>
+            
+            <div class="commodity-card" data-komoditas="julung-julung">
+                <img src="images/Julung-Julung.jpg" alt="Julung-Julung">
+                <div class="card-info">
+                    <h3>Julung-Julung</h3>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-komoditas="lobster-pasir">
+                <img src="images/Lobsterpasir.jpg" alt="Lobster Pasir">
+                <div class="card-info">
+                    <h3>Lobster Pasir</h3>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-komoditas="lobster-lainnya">
+                <img src="images/Lobsterpanulirus spp.jpg" alt="Lobster Lainnya">
+                <div class="card-info">
+                    <h3>Lobster Lainnya</h3>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-komoditas="kepiting">
+                <img src="images/kepiting.jpg" alt="Kepiting">
+                <div class="card-info">
+                    <h3>Kepiting</h3>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-komoditas="rajungan">
+                <img src="images/rajungan.jpg" alt="Rajungan">
+                <div class="card-info">
+                    <h3>Rajungan</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 SIHATI. All Rights Reserved.</p>
+    </footer>
+
+    <div id="commodity-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-details"></div>
+        </div>
+    </div>
+
+    <script src="js/commodity.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Layanan - SIHATI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <img src="images/karantinalogo.jpg" alt="Logo Karantina" class="logo">
+            <img src="images/torangbisalogo.jpg" alt="Logo Torang Bisa" class="logo">
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Beranda</a>
+            <a href="commodity.html">Komoditas Sulawesi Utara</a>
+            <a href="service.html">Kalkulator Layanan</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="calculator-container">
+            <h1>Kalkulator Layanan Karantina Ikan</h1>
+            <p>Pilih layanan dan masukkan jumlah yang dibutuhkan untuk menghitung estimasi biaya.</p>
+
+            <div class="input-group">
+                <label for="category-select">Kategori Utama:</label>
+                <select id="category-select">
+                    <option value="">-- Pilih Kategori --</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="subcategory-select">Subkategori:</label>
+                <select id="subcategory-select" disabled>
+                    <option value="">-- Pilih Subkategori --</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="service-select">Layanan:</label>
+                <select id="service-select" disabled>
+                    <option value="">-- Pilih Layanan --</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="quantity-input">Jumlah (<span id="unit-label">...</span>):</label>
+                <input type="number" id="quantity-input" min="1" value="1" disabled>
+            </div>
+
+            <button id="calculate-btn" disabled>Hitung Biaya Layanan</button>
+            
+            <div id="result-box" class="result-box">
+                </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 SIHATI. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/service.js"></script>
+    <script src="js/commodity.js"></script>
+</body>
+</html>
