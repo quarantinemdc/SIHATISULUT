@@ -65,7 +65,7 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
-/* --- Section and List Styling --- */
+/* --- General Content Styling --- */
 .general-description h1,
 .general-description h2 {
     text-align: center;
@@ -138,20 +138,25 @@ body {
 /* --- Styling untuk Halaman Komoditas --- */
 .header-komoditas {
     text-align: center;
-    margin-bottom: 30px;
-    padding: 0 15px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
 }
 
 .header-komoditas h1 {
-    font-size: 2.2em;
-    color: #007bff;
-    margin-bottom: 5px;
+    color: #007bff; /* Warna biru cerah */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .header-komoditas h2 {
-    font-size: 1.4em;
     color: #555;
+    font-size: 1.2em;
     font-weight: 400;
+    line-height: 1.5;
 }
 
 /* Kotak pencarian & filter */
@@ -202,9 +207,13 @@ body {
 
 .commodity-card img {
     width: 100%;
-    height: 150px;
-    object-fit: cover;
+    height: 150px; /* Pertahankan tinggi tetap */
+    object-fit: contain; /* Mengatur gambar agar pas di dalam kotak tanpa terpotong */
+    object-position: center; /* Memusatkan gambar di dalam kotak */
     display: block;
+    padding: 10px; /* Tambahkan sedikit padding agar gambar tidak terlalu mepet ke tepi */
+    background-color: #f7f7f7; /* Beri warna latar belakang jika gambar memiliki area transparan */
+    border-radius: 8px; /* Sesuaikan dengan border-radius card */
 }
 
 .commodity-card .card-info {
@@ -326,4 +335,290 @@ body {
     border-radius: 8px;
     text-align: left;
     display: none;
+}
+
+/* Styling untuk bagian kontak */
+.contact-info {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.contact-info h3 {
+    color: #004d80;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%; /* Sesuaikan lebar sesuai kebutuhan */
+    max-width: 400px;
+    padding: 15px 25px;
+    border-radius: 50px; /* Membuat sudut lebih melengkung */
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.contact-button i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+/* Warna untuk tombol WhatsApp */
+.contact-button.whatsapp {
+    background-color: #25D366;
+}
+
+/* Warna untuk tombol Website */
+.contact-button.website {
+    background-color: #007bff;
+}
+
+.contact-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Responsive design untuk layar kecil */
+@media (max-width: 768px) {
+    .contact-buttons {
+        flex-direction: column;
+    }
+
+    .contact-button {
+        width: 100%;
+    }
+}
+
+/* Styling untuk Header Komoditas */
+.header-komoditas {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.header-komoditas h1 {
+    color: #007bff; /* Warna biru cerah */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.header-komoditas h2 {
+    color: #555;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Styling untuk Kartu Menu Utama */
+.main-menu-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Agar responsif pada layar kecil */
+    gap: 30px; /* Jarak antar kartu */
+    margin-bottom: 50px;
+}
+
+.menu-item-link {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    flex: 1 1 300px; /* Fleksibel, dengan lebar dasar 300px */
+    max-width: 350px; /* Lebar maksimal kartu */
+}
+
+.menu-item {
+    background: linear-gradient(135deg, #f0f8ff, #e6f7ff); /* Gradient background */
+    border: 1px solid #cceeff;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+    height: 100%; /* Memastikan tinggi kartu seragam */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item:hover {
+    transform: translateY(-8px) scale(1.02); /* Efek melayang dan sedikit membesar */
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    background: linear-gradient(135deg, #e6f7ff, #d9f0ff); /* Perubahan gradient saat hover */
+}
+
+.menu-icon {
+    font-size: 3em;
+    color: #007bff; /* Warna ikon biru */
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-item:hover .menu-icon {
+    color: #0056b3; /* Warna ikon sedikit lebih gelap saat hover */
+}
+
+.menu-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.menu-item p {
+    font-size: 0.95em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Styling untuk Konten yang Ditampilkan */
+.content-display-area {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    margin-top: 30px;
+}
+
+.content-section {
+    display: none;
+    animation: fadeIn 0.5s ease-out; /* Efek fade-in saat konten muncul */
+}
+
+.content-section.active {
+    display: block;
+}
+
+.content-section h2 {
+    color: #004d80;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content-section p, .content-section ul {
+    color: #333;
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+.content-section ul {
+    list-style-type: disc;
+    margin-left: 25px;
+}
+
+.content-section ul li {
+    margin-bottom: 8px;
+}
+
+/* Animasi Fade In */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .main-menu-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-item-link {
+        max-width: 90%; /* Mengisi lebar penuh pada layar kecil */
+    }
+    .header-komoditas h1 {
+        font-size: 2em;
+    }
+    .header-komoditas h2 {
+        font-size: 1em;
+    }
+    .menu-icon {
+        font-size: 2.5em;
+    }
+    .menu-item h3 {
+        font-size: 1.3em;
+    }
+}
+
+/* Styling untuk Halaman Detail Konten */
+.content-detail-page {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    margin-top: 30px;
+}
+
+.content-detail-page h2 {
+    color: #004d80;
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content-detail-page h3 {
+    color: #007bff;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 8px;
+}
+
+.content-detail-page p {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk Daftar Poin (List) */
+.content-detail-page ul {
+    list-style-type: none; /* Menghilangkan bullet bawaan */
+    padding-left: 0;
+}
+
+.content-detail-page ul li {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.content-detail-page ul li::before {
+    content: "\f058"; /* Kode ikon Font Awesome untuk centang (check-circle) */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #28a745; /* Warna hijau untuk ikon */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
