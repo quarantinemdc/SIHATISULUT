@@ -215,16 +215,16 @@ document.addEventListener('DOMContentLoaded', () => {
         },
                 'Jasa Tindakan Karantina': {
             'Pemeriksaan Klinis (Ekspor dan Impor)': [
-                { id: '136', name: 'Pemeriksaan Klinis (Ekspor dan Impor)', unit: '', price: 0 },
+                { id: '136', name: 'Pemeriksaan Klinis (Ekspor dan Impor)', unit: 'per pemeriksaan', price: 20000 },
             ],
             'Pelayanan Pengasingan dan/atau Penahanan Media Pembawa (Ekspor dan Impor)': [
-                { id: '137', name: 'Pelayanan Pengasingan dan/atau Penahanan Media Pembawa (Ekspor dan Impor)', unit: '', price: 0 },
+                { id: '137', name: 'Pelayanan Pengasingan dan/atau Penahanan Media Pembawa (Ekspor dan Impor)', unit: 'per hari', price: 60000 },
             ],
             'Pelayanan Pengamatan (Ekspor dan Impor)': [
-                { id: '138', name: 'Pelayanan Pengamatan (Ekspor dan Impor)', unit: '', price: 0 },
+                { id: '138', name: 'Pelayanan Pengamatan (Ekspor dan Impor)', unit: 'per hari', price: 25000 },
             ],
             'Pelayanan Perlakuan (Ekspor dan Impor)': [
-                { id: '139', name: 'Pelayanan Perlakuan (Ekspor dan Impor)', unit: '', price: 0 },
+                { id: '139', name: 'Pelayanan Perlakuan (Ekspor dan Impor)', unit: 'per kali per perlakuan', price: 200000 },
             ],
             'Jasa Sarana dalam Rangka Tindakan Karantina': [
                 { id: '140', name: 'Pergerakan Kontainer (Kosong) 20’ Reefer/Non Reefer', unit: 'per boks', price: 100000 },
