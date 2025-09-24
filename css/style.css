@@ -443,3 +443,23 @@ body {
 .contact-button.facebook {
     background-color: #1877F2;
 }
+/* Pastikan tautan bisa diklik */
+.download-link {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+.download-link {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007bff; /* Biru terang, bisa disesuaikan */
+    color: #fff; /* Warna teks putih */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    border-radius: 50px; /* Membuat sudut melengkung, untuk efek pil */
+    font-weight: 600; /* Membuat teks lebih tebal */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-link:hover {
+    background-color: #0056b3; /* Warna lebih gelap saat disentuh */
+    transform: translateY(-2px); /* Efek tombol terangkat */
+}
